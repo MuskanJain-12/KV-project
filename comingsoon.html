@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - AgTech Startup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                        url('https://media.istockphoto.com/id/965148388/photo/green-ripening-soybean-field-agricultural-landscape.jpg?s=612x612&w=0&k=20&c=cEVP3uj34-5obt-Jf_WI3O9qfP6tVrFaQIv1rBvvpzc=') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .countdown {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .subscribe {
+            margin: 20px 0;
+        }
+        input[type="text"], input[type="email"] {
+            padding: 10px;
+            font-size: 1em;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+        }
+        .subscribe input, .subscribe button {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .subscribe input:focus, .subscribe button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #4CAF50;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .feature-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .feature-card {
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 2.5em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            background: rgba(76, 175, 80, 0.2);
+            padding: 15px 25px;
+            border-radius: 8px;
+            border: 1px solid #4CAF50;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <!-- Remove the img tag since we're using the image as background -->
+</header>
+
+<main class="fade-in">
+    <h1>Smart Farming Solutions Coming Soon!</h1>
+    <p>We're revolutionizing agriculture with AI-powered advisory services. Get ready for data-driven farming decisions!</p>
+
+    <div class="stats-container">
+        <div class="stat-item">
+            <div class="stat-number">85%</div>
+            <div>Yield Improvement</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">40%</div>
+            <div>Water Saved</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">1000+</div>
+            <div>Farmers Onboard</div>
+        </div>
+    </div>
+
+    <div class="feature-cards">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-cloud-sun"></i>
+            </div>
+            <h3>Weather Insights</h3>
+            <p>Real-time weather forecasting and crop-specific recommendations</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Crop Health</h3>
+            <p>AI-powered disease detection and treatment suggestions</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-tint"></i>
+            </div>
+            <h3>Smart Irrigation</h3>
+            <p>Optimize water usage with soil moisture sensors</p>
+        </div>
+    </div>
+
+    <div class="countdown">
+        <p>Launch in:</p>
+        <span id="countdown-timer">00:00:00</span>
+    </div>
+
+    <div class="subscribe">
+        <p>Join our community of innovative farmers!</p>
+        <input type="text" placeholder="Farm Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <select style="padding: 10px; margin: 5px; border-radius: 5px;">
+            <option value="">Select Crop Type</option>
+            <option value="wheat">Wheat</option>
+            <option value="rice">Rice</option>
+            <option value="corn">Corn</option>
+            <option value="soybean">Soybean</option>
+        </select>
+        <button>Join Waitlist</button>
+    </div>
+</main>
+
+<footer>
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+    <p>&copy; 2025 KisanVikas. All rights reserved.</p>
+</footer>
+
+<script>
+    // Countdown Timer (Example: 1 day from now)
+    const countdownDate = new Date().getTime() + 24 * 60 * 60 * 1000; // 1 day in milliseconds
+
+    const countdownFunction = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown-timer").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+            clearInterval(countdownFunction);
+            document.getElementById("countdown-timer").innerHTML = "EXPIRED";
+        }
+    });
+
+    // Add fade-in effect to elements when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const elements = document.querySelectorAll('h1, p, .countdown, .subscribe');
+        elements.forEach((element, index) => {
+            element.style.animation = `fadeIn 1s ease-in forwards ${index * 0.2}s`;
+        });
+    });
+
+    // Add form submission handling
+    const subscribeForm = document.querySelector('.subscribe');
+    subscribeForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const button = subscribeForm.querySelector('button');
+        button.textContent = 'Thanks for subscribing!';
+        button.style.backgroundColor = '#45a049';
+        setTimeout(() => {
+            button.textContent = 'Notify Me!';
+            button.style.backgroundColor = '#4CAF50';
+        }, 3000);
+    });
+
+    // Add animation for stats
+    const stats = document.querySelectorAll('.stat-number');
+    stats.forEach(stat => {
+        const finalValue = parseInt(stat.textContent);
+        let currentValue = 0;
+        const duration = 2000; // 2 seconds
+        const increment = finalValue / (duration / 16);
+        
+        const animate = () => {
+            currentValue += increment;
+            if (currentValue < finalValue) {
+                stat.textContent = Math.round(currentValue) + (stat.textContent.includes('%') ? '%' : '+');
+                requestAnimationFrame(animate);
+            } else {
+                stat.textContent = finalValue + (stat.textContent.includes('%') ? '%' : '+');
+            }
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                animate();
+                observer.disconnect();
+            }
+        });
+        
+        observer.observe(stat);
+    });
+
+    // Feature cards interaction
+    document.querySelectorAll('.feature-card').forEach(card => {
+        card.addEventListener('click', () => {
+            card.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                card.style.transform = 'translateY(-10px)';
+            }, 200);
+        });
+    });
+</script>
+</body>
+</html>
